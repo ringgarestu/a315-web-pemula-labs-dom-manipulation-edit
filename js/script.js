@@ -191,3 +191,7 @@ function localDataFormStorage() {
   }
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
+
+document.addEventListener(SAVED_EVENT, function () {
+  alert("Data berhasil ditambahkan");
+});
